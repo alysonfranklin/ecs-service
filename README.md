@@ -138,20 +138,7 @@ Available targets:
 
 | Name | Description |
 |------|-------------|
-| arn | Amazon Resource Name (ARN) of the cluster |
-| cluster\_identifier | Cluster Identifier |
-| cluster\_resource\_id | The region-unique, immutable identifie of the cluster |
-| cluster\_security\_groups | Default RDS cluster security groups |
-| database\_name | Database name |
-| dbi\_resource\_ids | List of the region-unique, immutable identifiers for the DB instances in the cluster |
-| endpoint | The DNS address of the RDS instance |
-| master\_host | DB Master hostname |
-| master\_username | Username for the master DB user |
-| reader\_endpoint | A read-only endpoint for the Aurora cluster, automatically load-balanced across replicas |
-| replicas\_host | Replicas hostname |
-| security\_group\_arn | Security Group ARN |
-| security\_group\_id | Security Group ID |
-| security\_group\_name | Security Group name |
+| target_group_arn | Amazon Resource Name (ARN) of the target_group |
 
 <!-- markdownlint-restore -->
 
