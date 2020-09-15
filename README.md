@@ -66,7 +66,7 @@ Available targets:
 |------|-------------|------|---------|:--------:|
 | VPC\_ID | VPC ID. | `string` | `""` | yes |
 | APPLICATION\_NAME | Service name in ECS | `string` | `""` | yes |
-| APPLICATION\_PORT | Port number in target_group | `number` | `"8080"` | no |
+| APPLICATION\_PORT | Port number in target_group | `number` | `8080` | no |
 
 ## Outputs
 
