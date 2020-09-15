@@ -64,9 +64,9 @@ Available targets:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| additional\_tag\_map | Additional tags for appending to tags\_as\_list\_of\_maps. Not added to `tags`. | `map(string)` | `{}` | no |
-| admin\_password | (Required unless a snapshot\_identifier is provided) Password for the master DB user | `string` | `""` | no |
-| admin\_user | (Required unless a snapshot\_identifier is provided) Username for the master DB user | `string` | `"admin"` | no |
+| VPC\_ID | VPC ID. | `(string)` | `""` | yes |
+| APPLICATION\_NAME | Service name in ECS | `string` | `""` | yes |
+| APPLICATION\_PORT | Port number in target_group | `number` | `"8080"` | no |
 
 ## Outputs
 
