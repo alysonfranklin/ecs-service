@@ -1,17 +1,6 @@
 // target
 resource "aws_alb_target_group" "ecs-service" {
-  name = "${var.TARGET_GROUP_NAME}-${substr(
-    md5(
-      format(
-        "%s%s%s",
-        var.APPLICATION_PORT,
-        var.DEREGISTRATION_DELAY,
-        var.HEALTHCHECK_MATCHER,
-      ),
-    ),
-    0,
-    5,
-  )}"
+  name                          = var.TARGET_GROUP_NAME
   port                          = var.APPLICATION_PORT
   protocol                      = "HTTP"
   vpc_id                        = var.VPC_ID
